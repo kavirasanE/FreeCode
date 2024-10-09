@@ -32,10 +32,10 @@ const AboutUs = () => {
   return (
     <div className="relative bg-customblue text-white ">
       <img src={s5} className="absolute w-full h-full mix-blend-overlay  " />
-      <div className="flex flex-row justify-between items-center py-40 gap-10 pr-5">
-        <img src={s10} className="h-full w-1/2 " />
-        <div className="flex flex-col items-start justify-center gap-5">
-          <p className="font-extrabold text-5xl  ">Why Choose Us ?</p>
+      <div className="flex flex-col  lg:flex-row justify-between items-center lg:py-20  xl:py-40 lg:gap-10 lg:pr-5 ">
+        <img src={s10} className="h-full w-full lg:w-1/2 " />
+        <div className="flex flex-col items-center justify-center gap-5 p-4">
+          <p className="font-extrabold  lg:text-5xl text-2xl ">Why Choose Us ?</p>
           {/* <img src={banner} className='absolute bg-opacity-0 h-[500px] w-full'/> */}
           {data.map((item, index) => (
             <AboutUsPoints item={item} index={index} />

@@ -11,19 +11,17 @@ const ContactUs = () => {
   const CurrentYear = new Date().getFullYear();
   return (
     <div className="relative bg-customblue text-white ">
-      <img src={s20} className="absolute w-full h-full mix-blend-overlay " />
-      <div className="flex flex-row  justify-between items-center py-20">
-        <img src={s12} className=" h-[400px]  " />
-
-        <div className="flex flex-col gap-5 w-full p-10  ">
-          <p className="font-extrabold text-5xl text-center ">Contact Us.</p>
-
+      <img src={s20} className="absolute w-full h-full mix-blend-overlay  " />
+      <div className="flex flex-col lg:flex-row  justify-between items-center lg:py-20">
+        <img src={s12} className=" xl:h-[400px] h-40 mix-blend-screen" />
+        <div className="flex flex-col gap-5 w-full p-4 lg:p-10  ">
+          <p className="font-extrabold lg:text-5xl text-2xl text-center ">Contact Us.</p>
           <ContactForm />
         </div>
-        <img src={s} className=" h-[400px] object-contain  " />
+        <img src={s} className=" xl:h-[400px] h-40 object-contain  mix-blend-screen " />
       </div>
       <div className="flex flex-col items-center justify-center p-4">
-        <p className="text-xl font-semibold">
+        <p className="lg:text-xl font-semibold">
           {" "}
           Crated with 🤍 by Free Code.© {CurrentYear}
         </p>

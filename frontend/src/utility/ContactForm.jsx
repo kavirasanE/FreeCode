@@ -5,7 +5,7 @@ import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 
 const ContactForm = () => {
   return (
-    <form className="flex flex-col gap-4 bg-white p-10 rounded-lg">
+    <form className="flex flex-col gap-4 bg-white p-4 lg:p-10 rounded-lg">
          <div>
         <div className="mb-2 block font-bold">
           <Label htmlFor="password2" value="Your Name" className="font-bold"/>
@@ -33,17 +33,17 @@ const ContactForm = () => {
       </div>
       <div className="flex items-center gap-2">
         {/* <Checkbox id="agree" /> */}
-        <Label htmlFor="agree" className="flex">
+        <Label htmlFor="agree" className="flex text-xs lg:text-md">
           I agree with the&nbsp;
           <a
             href="#"
-            className="text-cyan-600 hover:underline dark:text-cyan-500"
+            className="text-cyan-600 hover:underline text-xs lg:text-md dark:text-cyan-500"
           >
             terms and conditions
           </a>
         </Label>
       </div>
-      <Button type="submit" color="purple" className="mx-40 text-xl">Contact Now</Button>
+      <Button type="submit" color="purple" className="lg:mx-40 text-xl">Contact Now</Button>
     </form>
   );
 };

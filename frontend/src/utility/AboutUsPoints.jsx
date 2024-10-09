@@ -7,8 +7,8 @@ const AboutUsPoints = ({ item, index }) => {
       <Timeline.Item key={index}>
         <Timeline.Point />
         <Timeline.Content>
-          <Timeline.Time className="text-white text-xl ">{item.title}</Timeline.Time>
-          <Timeline.Body className="text-white/60">{item.description}</Timeline.Body>
+          <Timeline.Time className="text-white text-md lg:text-xl ">{item.title}</Timeline.Time>
+          <Timeline.Body className="text-white/60 text-sm lg:text-md">{item.description}</Timeline.Body>
         </Timeline.Content>
       </Timeline.Item>
     </Timeline>

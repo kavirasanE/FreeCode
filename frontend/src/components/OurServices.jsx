@@ -32,18 +32,18 @@ const OurServices = () => {
   ];
   return (
     <div className="relative bg-customblue text-white ">
-      <img src={s6} className="absolute w-full h-full mix-blend-overlay  " />
+      <img src={s6} className="absolute w-full h-full mix-blend-overlay " />
 
       {/* <p className="font-extrabold text-5xl text-center underline py-5">Why Choose US...</p> */}
-      <p className="font-bold text-5xl text-center ">Our Services</p>
-      <div className="flex flex-col xl:flex-row items-start justify-center gap-5 mx-20 py-10">
+      <p className="font-bold lg:text-5xl text-2xl text-center ">Our Services</p>
+      <div className="flex flex-col  lg:flex-grow-0  xl:flex-row   items-start justify-center gap-5 lg:gap-10 xl:gap-5 mx-2 xl:mx-20 py-10">
         {data.map((item,index) => (
             <ServiceCard item={item} index ={index} />
         ))}
-      
       </div>
     </div>
-  );
+  )
+//   lg:grid lg:grid-cols-2 lg:items-stretch lg:justify-around 
 };
 
 export default OurServices;
